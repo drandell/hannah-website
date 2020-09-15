@@ -1,0 +1,12 @@
+// Import Bootstrap and its default variables
+@import "node_modules/bootstrap/scss/bootstrap";
+
+.bg-custom {
+    background-color: cadetblue !important;
+}
+
+.navbar-expand .navbar-nav .nav-link {
+    color: whitesmoke;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+}
