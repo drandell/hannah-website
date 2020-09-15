@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/hannah-website/static/css/main.cb41091d.chunk.css",
+    "main.js": "/hannah-website/static/js/main.a0315324.chunk.js",
+    "main.js.map": "/hannah-website/static/js/main.a0315324.chunk.js.map",
+    "runtime-main.js": "/hannah-website/static/js/runtime-main.a2eadaa8.js",
+    "runtime-main.js.map": "/hannah-website/static/js/runtime-main.a2eadaa8.js.map",
+    "static/js/2.be787587.chunk.js": "/hannah-website/static/js/2.be787587.chunk.js",
+    "static/js/2.be787587.chunk.js.map": "/hannah-website/static/js/2.be787587.chunk.js.map",
+    "index.html": "/hannah-website/index.html",
+    "precache-manifest.88e081c90f3b6d0f3054ac380cb10f76.js": "/hannah-website/precache-manifest.88e081c90f3b6d0f3054ac380cb10f76.js",
+    "service-worker.js": "/hannah-website/service-worker.js",
+    "static/css/main.cb41091d.chunk.css.map": "/hannah-website/static/css/main.cb41091d.chunk.css.map",
+    "static/js/2.be787587.chunk.js.LICENSE.txt": "/hannah-website/static/js/2.be787587.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a2eadaa8.js",
+    "static/js/2.be787587.chunk.js",
+    "static/css/main.cb41091d.chunk.css",
+    "static/js/main.a0315324.chunk.js"
+  ]
+}
