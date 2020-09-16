@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/hannah-website/precache-manifest.88e081c90f3b6d0f3054ac380cb10f76.js"
+  "/hannah-website/precache-manifest.dd39b6932abccc41686e16a6bb83b5ca.js"
 );
 
 self.addEventListener('message', (event) => {
