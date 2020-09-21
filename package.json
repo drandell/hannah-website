@@ -25,7 +25,8 @@
     "typescript": "^3.9.7"
   },
   "scripts": {
-    "predeploy": "npm run build",
+    "copy": "cp ./CNAME ./build/CNAME",
+    "predeploy": "npm run build && npm run copy",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
