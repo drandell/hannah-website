@@ -5,21 +5,16 @@ import React, { useEffect } from 'react';
 import './css/bootstrap.scss';
 import './App.scss';
 import { Main } from './components/main';
-import { Header } from './components/header';
-import Footer from './components/footer';
-
 
 export const App = () => {
 
   useEffect(() => {
-    document.title = "Hannah Martin Smells 💩"
+    document.title = "Hannah Martin Translation"
   }, []);
 
   return (
    <>
-    <Header />
     <Main />
-    <Footer />
    </>
   );
  };
