@@ -1,6 +1,6 @@
 {
   "name": "hannah-website",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "homepage": "https://drandell.github.io/",
   "dependencies": {
@@ -23,7 +23,7 @@
   },
   "scripts": {
     "copy": "cp ./CNAME ./build/CNAME",
-    "predeploy": "npm run build && npm run copy",
+    "predeploy": "npm run build && cp build/index.html build/404.html && npm run copy",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
