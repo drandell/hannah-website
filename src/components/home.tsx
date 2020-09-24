@@ -1,16 +1,55 @@
 
 import React, { Component, createRef, RefObject } from "react";
 import { Fade } from "react-awesome-reveal";
-import { Col, Container, Nav, Navbar, Row } from "react-bootstrap";
+import { Col, Container, Nav, Navbar, Row,  Modal, Button } from "react-bootstrap";
 import Footer from "./footer";
 import { JumbotronLogo } from "./jumbotron-logo";
+import ReactMarkdown from 'react-markdown/with-html'
+import { France, Germany, UnitedKingdom, UnitedStates } from 'react-flat-flags';
 
-export class Home extends Component {
+import aboutMe from "../markdown/about_me.md";
+import learnMore from "../markdown/learn_more.md";
+import testimonials from "../markdown/testimonials.md";
+
+interface HomeProps {
+    files: Map<string, string>;
+    show: boolean;
+}
+
+export class Home extends Component<{}, HomeProps> {
 
     private servicesRef = createRef<HTMLDivElement>();
     private aboutMeRef = createRef<HTMLDivElement>();
     private testimonialsRef = createRef<HTMLDivElement>();
     scrollToContent: any;
+
+    constructor(props: HomeProps) {
+        super(props);
+
+        this.handleShow = this.handleShow.bind(this);
+		this.handleClose = this.handleClose.bind(this);
+    
+        this.state = { 
+            files: new Map([]),
+            show: false,
+        }
+    }
+    
+    componentWillMount() {
+        let map = new Map();
+        fetch(aboutMe).then((res) => res.text()).then((md) => {
+            map.set('about', md);
+            this.setState({ files: map })
+        });
+        fetch(learnMore).then((res) => res.text()).then((md) => {
+            map.set('learnMore', md);
+            this.setState({ files: map })
+        });
+        fetch(testimonials).then((res) => res.text()).then((md) => {
+            map.set('testimonials', md);
+            this.setState({ files: map })
+        });
+    }
 
     scrollToRef = (ref: RefObject<HTMLDivElement>) => {
         if (ref.current) {
@@ -18,7 +57,17 @@ export class Home extends Component {
         }
     }
 
+    handleClose() {
+		this.setState({ show: false });
+	}
+
+	handleShow() {
+		this.setState({ show: true });
+	}
+
     render() {
+        let markdown = this.state;
+
         return (
             <>
                 <header>
@@ -40,32 +89,73 @@ export class Home extends Component {
                                 <div className="card" ref={this.aboutMeRef}>
                                     <div className="card-body">
                                         <h4 className="card-title text-center">About Me</h4>
-                                        <p>
-                                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.Pellentesque sit amet metus non dolor condimentum aliquam at id libero.Duis ac viverra elit, et molestie nulla.Sed vitae leo est.Donec sollicitudin pretium ipsum vel eleifend.In sollicitudin leo vel blandit luctus.Curabitur ac leo eget nulla varius tempus.Cras ornare turpis quis tellus laoreet bibendum.Etiam et nisi varius, elementum nunc eu, aliquam quam.Mauris congue sem at libero accumsan, quis porttitor nisl                                        mmo                                                                           Nullam cursus felis congue leo ultricies, non imperdiet turpis pulvinar.Quisque accumsan tellus nec laoreet posuere.In pretium, ante ut tincidunt dictum, nulla leo viverra nisi, nec iaculis enim urna a velit.Nulla vitae turpis non felis euismod ornare ut quis felis.Curabitur arcu lectus, pulvinar ac vehicula eget, sollicitudin vitae ligula.Cras ullamcorper gravida lorem, ut auctor metus condimentum commodo.Aenean egestas eget turpis at cursus.Maecenas et sem a ligula blandit porttitor nec ut tortor.Proin tristique, nulla vitae faucibus ornare, ante ligula suscipit erat, et placerat orci lorem eget felis.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Mauris et nunc turpis.Nunc sed scelerisque nibh, sed tempus felis.Morbi at congue quam.Integer molestie sem leo, eu vestibulum                                         t a                                        s.
-
-                                            Praesent ac odio enim.Quisque dictum ultrices velit, quis sagittis tortor consequat in.Ut lorem justo, lacinia id odio eget, suscipit venenatis est.Donec mattis nibh ultrices facilisis faucibus.Suspendisse mi est, porttitor in dolor et, porta elementum nisl.Aenean congue rhoncus accumsan.Etiam ac cursus justo.In et sapien ut dui suscipit ornare sit amet nec orci.Duis nec volutpat sapien, nec efficitur massa.Fusce nec lectus id nisl molestie ullamcorper a volutpat libero.Duis sagittis iaculis semper.Etiam lectus purus, mollis eu magna sed, feugiat fermentum eros.Suspendisse diam mauris, accumsan eget arcu non, viverra tempor ligula.Suspendisse dignissim odio ac lorem porttitor blandit.Aenean iaculis efficitur porta.Praesent scelerisque, nulla cursus aliquam cursus, arcu diam egestas eros, et lob                                        is                                         non tellus.
-
-                                            Proin est purus, facilisis vitae varius ac, efficitur et mi.Donec ultricies leo turpis.Morbi in erat sapien.Phasellus sollicitudin mauris neque, sit amet lacinia nibh rhoncus eu.Aliquam vel ligula molestie, luctus arcu ac, ullamcorper velit.Praesent et lectus ut erat ultrices aliquam a a dolor.Nunc vitae iaculis quam, et aliquam risus.In eleifend, ipsum et efficitur interdum, leo eros bibendum mi, et tincidunt ante sem fermentum leo.Fusce iaculis ante risus, at lacinia odio cursus in.Sed sed ipsum id risus finibus interdum sed a eros.Aliquam matti                                        rcu elementum velit sagittis vestibulum.
-
-                                            In rhoncus viverra sagittis.Nam felis ante, auctor sed odio a, ultrices pharetra neque.Nulla sollicitudin finibus tristique.Nulla ac felis risus.Etiam ipsum metus, fermentum ac ultricies at, gravida maximus lectus.Donec ac orci velit.Nulla luctus justo nec mattis elementum.Vestibulum sollicitudin sollicitudin laoreet.Pellentesque quis accumsan elit.Suspendisse lacinia massa vitae dui consectetur, id placerat dui ullamcorper.Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.Phasellus finibus euismod porta.Nulla facilisi.
-                                        </p>
+                                        <ReactMarkdown source={markdown.files.get('about')} skipHtml={true} />
                                     </div>
                                 </div>
                             </div>
                             <div className="col-md-4">
                                 <div className="card" ref={this.servicesRef}>
                                     <div>
-                                        <h4 className="card-title text-center">Services</h4>
+                                        <h4 className="card-main-title text-center">Services</h4>
                                         <Container fluid className="text-center">
                                             <Row>
-                                                <Col>German to English</Col>
-                                                <Col >French to English</Col>
+                                                <Col>
+                                                    <div className="card">
+                                                        <div className="card-body">
+                                                            <h4 className="card-title text-center"><Germany size={30} /> + <France size={30} /> &gt; <UnitedKingdom size={30} /> Translation</h4>
+                                                            <p> 
+                                                            I offer a range of linguistic solutions and specialise in translation for various industries. My high attention to detail means that your texts will be translated to an excellent standard. 
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </Col>
+                                                <Col >
+                                                    <div className="card">
+                                                        <div className="card-body">
+                                                            <h4 className="card-title text-center">Proofreading</h4>
+                                                            <p> 
+                                                            It’s quite common for non-native English speakers to translate documents into English. Unfortunately, this is when mistakes are made. I can proofread your text and ensure that it is completely accurate. 
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </Col>
                                             </Row>
                                             <Row>
-                                                <Col>1 of 3</Col>
-                                                <Col>2 of 3</Col>
-                                                <Col>3 of 3</Col>
+                                                <Col>
+                                                    <div className="card">
+                                                        <div className="card-body">
+                                                            <h4 className="card-title text-center">MT Post-Editing</h4>
+                                                            <p> 
+                                                            Machine translation has drastically improved over the last few years thanks to AI, but certain texts will still require a native English speaker to check for and correct any errors.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </Col>
+                                                <Col>
+                                                    <div className="card">
+                                                        <div className="card-body">
+                                                            <h4 className="card-title text-center"><UnitedStates size={30} /> into <UnitedKingdom size={30} /> English</h4>
+                                                            <p> 
+                                                            Despite being the same language, both US English and UK English often use different spelling or even completely different terms to describe the same thing. I can tailor your text for the British market.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </Col>
                                             </Row>
+                                            <Button className="button-padding" onClick={this.handleShow}> Learn More </Button>
+                                            <Modal size="lg" show={this.state.show} onHide={this.handleClose} centered>
+                                                <Modal.Header closeButton>
+                                                <Modal.Title>Learn More</Modal.Title>
+                                                </Modal.Header>
+                                                <Modal.Body>
+                                                    <ReactMarkdown source={markdown.files.get('learnMore')} skipHtml={true} />
+                                                </Modal.Body>
+                                                <Modal.Footer>
+                                                <Button variant="secondary" onClick={this.handleClose}>
+                                                    Close
+                                                </Button>
+                                                </Modal.Footer>
+                                            </Modal>
                                         </Container>
                                     </div>
                                 </div>
@@ -74,15 +164,7 @@ export class Home extends Component {
                                 <div className="card" ref={this.testimonialsRef}>
                                     <div className="card-body">
                                         <h4 className="card-title text-center">Testimonials</h4>
-                                        <p>
-                                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.Pellentesque sit amet metus non dolor condimentum aliquam at id libero.Duis ac viverra elit, et molestie nulla.Sed vitae leo est.Donec sollicitudin pretium ipsum vel eleifend.In sollicitudin leo vel blandit luctus.Curabitur ac leo eget nulla varius tempus.Cras ornare turpis quis tellus laoreet bibendum.Etiam et nisi varius, elementum nunc eu, aliquam quam.Mauris congue sem at libero accumsan, quis porttitor nisl                                        mmo                                                                           Nullam cursus felis congue leo ultricies, non imperdiet turpis pulvinar.Quisque accumsan tellus nec laoreet posuere.In pretium, ante ut tincidunt dictum, nulla leo viverra nisi, nec iaculis enim urna a velit.Nulla vitae turpis non felis euismod ornare ut quis felis.Curabitur arcu lectus, pulvinar ac vehicula eget, sollicitudin vitae ligula.Cras ullamcorper gravida lorem, ut auctor metus condimentum commodo.Aenean egestas eget turpis at cursus.Maecenas et sem a ligula blandit porttitor nec ut tortor.Proin tristique, nulla vitae faucibus ornare, ante ligula suscipit erat, et placerat orci lorem eget felis.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Mauris et nunc turpis.Nunc sed scelerisque nibh, sed tempus felis.Morbi at congue quam.Integer molestie sem leo, eu vestibulum                                         t a                                        s.
-
-                                            Praesent ac odio enim.Quisque dictum ultrices velit, quis sagittis tortor consequat in.Ut lorem justo, lacinia id odio eget, suscipit venenatis est.Donec mattis nibh ultrices facilisis faucibus.Suspendisse mi est, porttitor in dolor et, porta elementum nisl.Aenean congue rhoncus accumsan.Etiam ac cursus justo.In et sapien ut dui suscipit ornare sit amet nec orci.Duis nec volutpat sapien, nec efficitur massa.Fusce nec lectus id nisl molestie ullamcorper a volutpat libero.Duis sagittis iaculis semper.Etiam lectus purus, mollis eu magna sed, feugiat fermentum eros.Suspendisse diam mauris, accumsan eget arcu non, viverra tempor ligula.Suspendisse dignissim odio ac lorem porttitor blandit.Aenean iaculis efficitur porta.Praesent scelerisque, nulla cursus aliquam cursus, arcu diam egestas eros, et lob                                        is                                         non tellus.
-
-                                            Proin est purus, facilisis vitae varius ac, efficitur et mi.Donec ultricies leo turpis.Morbi in erat sapien.Phasellus sollicitudin mauris neque, sit amet lacinia nibh rhoncus eu.Aliquam vel ligula molestie, luctus arcu ac, ullamcorper velit.Praesent et lectus ut erat ultrices aliquam a a dolor.Nunc vitae iaculis quam, et aliquam risus.In eleifend, ipsum et efficitur interdum, leo eros bibendum mi, et tincidunt ante sem fermentum leo.Fusce iaculis ante risus, at lacinia odio cursus in.Sed sed ipsum id risus finibus interdum sed a eros.Aliquam matti                                        rcu elementum velit sagittis vestibulum.
-
-                                            In rhoncus viverra sagittis.Nam felis ante, auctor sed odio a, ultrices pharetra neque.Nulla sollicitudin finibus tristique.Nulla ac felis risus.Etiam ipsum metus, fermentum ac ultricies at, gravida maximus lectus.Donec ac orci velit.Nulla luctus justo nec mattis elementum.Vestibulum sollicitudin sollicitudin laoreet.Pellentesque quis accumsan elit.Suspendisse lacinia massa vitae dui consectetur, id placerat dui ullamcorper.Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.Phasellus finibus euismod porta.Nulla facilisi.
-                                        </p>
+                                        <ReactMarkdown source={markdown.files.get('testimonials')} skipHtml={false} escapeHtml={false} />
                                     </div>
                                 </div>
                             </div>

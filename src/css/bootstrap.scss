@@ -8,6 +8,21 @@
     z-index: 0;
 }
 
+.card-body {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1rem 3rem 1rem 3rem
+}
+
+.button-padding {
+    margin-bottom: 1rem;
+}
+
+.modal-header .close {
+    border: none;
+    outline: none;
+}
+
 .navbar-expand .navbar-nav .nav-link {
     font-family: 'Futura Std', sans-serif;
     font-weight: 400;
@@ -22,4 +37,9 @@
 
 .col {
     padding-bottom: 1.5rem;
+}
+
+.card-main-title {
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
 }
