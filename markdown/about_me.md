@@ -1,6 +1,4 @@
-My name is Hannah and I am a multilingual freelance translator from Wales, UK. In 2016, I graduated with a First-Class Honours (BA) in French and German Language from Cardiff University. 
-
-With nearly one and a half years’ professional experience, I have the ability to proficiently translate text from German and French into English. 
+My name is Hannah and I am a multilingual freelance translator from Wales, UK. In 2016, I graduated with a First-Class Honours (BA) in French and German Language from Cardiff University. With nearly one and a half years’ professional experience, I have the ability to proficiently translate text from German and French into English.
 
 After graduating, I completed a 3-month translation internship in Zurich, Switzerland in order to develop my skills as a translator. Since returning to the UK, I have worked in Marketing, and for the last 1.5 years, I have been working as a freelance translator, specialising in translation for a variety of different industries. I am also an Associate member of the Institute of Translation and Interpreting, which promotes high standards in translation. 
 
