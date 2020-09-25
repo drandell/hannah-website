@@ -1,19 +1,19 @@
 > `Hannah has worked with us here at Freihandel Commerce as a freelance translator. After the first translation she became one of our most valuable freelance employees, the person we turned to with questions and special projects regarding specific translations for the Amazon UK market. In her time with us, she has demonstrated the personal, organisational and interpersonal skills that make her a truly exceptional translator. Her professional and communication skills made our working relationship very pleasant.`
 
--	Eliakim, Camden Barbershop Company
+_Eliakim, Camden Barbershop Company_
 
 > `Hannah works very independently and conscientiously. Her texts are of very high quality and to my complete satisfaction. I can always rely on her and know that she can implement projects quickly and the quality of her work is excellent. Hannah is a reliable and vital team member at PlusDent.`
 
--	Korenia, PlusDental 
+_Korenia, PlusDental_
 
 > `Hannah did a flawless job as usual. We are very satisfied with her work and will definitely continue to work with her in the future. It was a very good decision to hire her.`
 
--	Client 
+_Client_
 
 > `Hannah did an extraordinary job! She helped us translate some texts for our Amazon pages and knew how to use the right language. Her work is impeccable, if you have doubts she clarifies them and if you have changes she makes them for you. It was also very pleasant to work with her, as in a short time she answered the questions we had. We will definitely work with her again!`
 
--	Client 
+_Client_
 
 > `We love to work with Hannah. She is an excellent translator. She is very communicative, fast and reliable. I hope to work with her soon again. Highly recommended.`
 
--	Client 
+_Client_
