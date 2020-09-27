@@ -11,11 +11,109 @@
 .card-body {
     flex: 1 1 auto;
     min-height: 1px;
-    padding: 1rem 3rem 1rem 3rem
+    text-align: center;
+}
+
+@media screen and (max-width: 400px) {
+    .card-custom {
+        padding: 2rem 2rem 0rem 2rem;
+    }  
+
+    .card-custom-mini {
+        padding: 2rem 2rem;
+        min-height: 425px;
+        height: 425px;
+    }
+
+    .jumbotron {
+        max-height: 350px;
+        height: 350px;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 799px) {
+    .card-custom {
+        padding: 2rem 2rem 0rem 2rem;
+    }  
+
+    .card-custom-mini {
+        padding: 1rem 1rem;
+        min-height: 450px;
+    }
+
+    .jumbotron {
+        max-height: 400px;
+        height: 400px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .card-custom {
+        padding: 2rem 6rem 1rem 6rem;
+    }  
+
+    .card-custom-mini {
+        padding: 2rem 2rem;
+        min-height: 425px;
+        height: 425px;
+    }
+
+    .jumbotron {
+        max-height: 500px;
+        height: 500px;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .card-custom {
+        padding: 2rem 6rem 1rem 6rem;
+    }  
+
+    .card-custom-mini {
+        padding: 2rem 2rem;
+        min-height: 250px;
+        height: 250px;
+    }
+
+    .jumbotron {
+        max-height: 500px;
+        height: 500px;
+    }
 }
 
 .button-padding {
-    margin-bottom: 1rem;
+    margin: 1rem;
+    background-color: white !important;
+    outline-color: white;
+    border-color: white;
+    color: #9bc8c9;
+    font-size: small;
+    border-radius: 1rem;
+}
+
+.button-padding:hover {
+    margin: 1rem;
+    background-color: rgba(255, 255, 255, 0.5) !important;
+    outline-color: rgba(255, 255, 255, 0.5);
+    border-color: rgba(255, 255, 255, 0.5);
+    color: #9bc8c9;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active {
+    border-color: rgba(255, 255, 255, 0.5) !important;
+    color: #9bc8c9;
+}
+
+.btn-primary:focus,.btn-primar:active:focus, .btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
+    border-color: rgba(255, 255, 255, 0.5);
+    color: #9bc8c9;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .show > .btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
+    border-color: rgba(255, 255, 255, 0.5);
+    color: #9bc8c9;
 }
 
 .modal-header .close {
@@ -29,7 +127,31 @@
     font-size: medium;
     letter-spacing: 1.5px;
     line-height: 25px;
-    color: whitesmoke;
+    color: white;
+    padding-right: 3.5rem;
+    padding-left: 3.5rem;
+    text-align: center;
+}
+
+.nav-link {
+    font-family: 'Futura Std', sans-serif;
+    font-weight: 400;
+    font-size: medium;
+    letter-spacing: 1.5px;
+    line-height: 25px;
+    color: white;
+    padding-right: 3.5rem;
+    padding-left: 3.5rem;
+    text-align: center;
+}
+
+.nav-link:hover {
+    font-family: 'Futura Std', sans-serif;
+    font-weight: 400;
+    font-size: medium;
+    letter-spacing: 1.5px;
+    line-height: 25px;
+    color: black;
     padding-right: 3.5rem;
     padding-left: 3.5rem;
     text-align: center;
@@ -41,5 +163,30 @@
 
 .card-main-title {
     margin-top: 0.75rem;
-    margin-bottom: 0.75rem;
+    margin-bottom: 1.75rem;
+    color: #9bc8c9 !important;
+}
+
+.card-main-title-offset {
+    margin-top: 0.75rem;
+    margin-bottom: 1.75rem;
+    color: white !important;
+    font-weight: 400;
+}
+
+.modal-header {
+    display: block;
+}
+
+code {
+    font-family: 'Futura Std', sans-serif;
+    font-weight: 300;
+    font-size: medium;
+    letter-spacing: 1.5px;
+    line-height: 25px;
+    color: black;
+}
+
+em {
+    color: #9bc8c9;
 }

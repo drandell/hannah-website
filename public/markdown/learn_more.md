@@ -2,16 +2,15 @@
 
 Over the course of my career as a freelance translator, I have gained extensive experience in translating a wide range of texts. Whether it’s a CV or a travel brochure that needs translating, I can deliver high-quality and accurate translations. Here are the services I can provide for you: 
 
--	**Business & Marketing Translations:**
+-	Business & Marketing Translations:
 I can translate all things related to your business: your website, presentations, business reports, HR documents, press releases, adverts, or marketing content – I can help your business produce accurate content to the English-speaking market. 
 
--	**General Translations:**
+-	General Translations: 
 I can translate your CV, birth certificates, emails, letters, Amazon product listings. You name it, I can do it. 
 
--	**Dental (Medical) Translations:**
+-	Dental (Medical) Translations
 This is where my expertise lies. I can translate anything related to the dental industry: a dental aligner brochure, patient questionnaires, documents relating to clinical trials, letters to patients. You can rely on me to produce excellent translations for you. 
-
--	**Arts & Literary Translations:**
+-	Arts & Literary Translations:
 Have you written an article, a review or even a book, and are now looking to expand your audience? I am here to help you! 
 
 2. ##### Proofreading

@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
-import { Button } from 'react-bootstrap';
+import { Button, Col, Row } from 'react-bootstrap';
 
 export default class Footer extends React.Component {
     
@@ -15,15 +15,20 @@ export default class Footer extends React.Component {
         return (
             <footer className="text-muted py-5">
                 <div className="container">
-                    
-                    <div onClick={() => this.backToTop()}>
-                        <p className="float-right">
-                            <Button variant="outline-secondary" href="#">Back to Top</Button> 
-                        </p>
-                    </div>
-                    <p className="font-weight-light">
-                        &copy; Hannah Martin 2020 (Website created by Daniel Randell)
-                    </p>
+                    <Row>
+                        <Col>     
+                            <p className="font-weight-light">
+                                &copy; Hannah Martin 2020 (Website created by Daniel Randell)
+                            </p>
+                        </Col>
+                        <Col>
+                            <div onClick={() => this.backToTop()}>
+                                <p className="float-right">
+                                    <Button variant="outline-secondary" href="#">Back to Top</Button> 
+                                </p>
+                            </div>
+                        </Col>
+                    </Row>
                 </div>
             </footer>
         );
