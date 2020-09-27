@@ -196,7 +196,7 @@ export class Home extends Component<{}, HomeProps> {
                                         <Container fluid className="text-center">
                                             <Row>
                                                 <Col>
-                                                    <p>If you would like to request a quote or wish to learn more about my services, please do not hesitate to contact me at <a href="mailto:hlm@translations.co.uk?subject=Email Enquiry">hlm@translations.co.uk</a></p>
+                                                    <p>If you would like to request a quote or wish to learn more about my services, please do not hesitate to contact me at <a href="mailto:info@hlm-translations.co.uk?subject=Email Enquiry">hlm@translations.co.uk</a></p>
                                                 </Col>
                                             </Row>
                                         </Container>
