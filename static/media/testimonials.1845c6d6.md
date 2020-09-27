@@ -13,17 +13,17 @@ _Korenia, PlusDental_
 
 > `Hannah did a flawless job as usual. We are very satisfied with her work and will definitely continue to work with her in the future. It was a very good decision to hire her.`
 
-_Client_  
+_Julien, Individual Client_  
 
 ---------------
 
 > `Hannah did an extraordinary job! She helped us translate some texts for our Amazon pages and knew how to use the right language. Her work is impeccable, if you have doubts she clarifies them and if you have changes she makes them for you. It was also very pleasant to work with her, as in a short time she answered the questions we had. We will definitely work with her again!`
 
-_Client_ 
+_Frank, Individual Client_ 
 
 ---------------
 
 > `We love to work with Hannah. She is an excellent translator. She is very communicative, fast and reliable. I hope to work with her soon again. Highly recommended.`
 
-_Client_  
+_Christian, Individual Client_  
 
