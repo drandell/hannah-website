@@ -1,8 +1,11 @@
 // Import Bootstrap and its default variables
 @import "node_modules/bootstrap/scss/bootstrap";
 
+$bgBlue: #9bc8c9;
+$bgBlueHalfAlpha: rgba(255, 255, 255, 0.5);
+
 .bg-custom {
-    background-color: #9bc8c9 !important;
+    background-color: $bgBlue !important;
     border-radius: 0rem;
     margin-bottom: 0rem;
     z-index: 0;
@@ -93,27 +96,27 @@
 
 .button-padding:hover {
     margin: 1rem;
-    background-color: rgba(255, 255, 255, 0.5) !important;
-    outline-color: rgba(255, 255, 255, 0.5);
-    border-color: rgba(255, 255, 255, 0.5);
-    color: #9bc8c9;
+    background-color: $bgBlueHalfAlpha !important;
+    outline-color: $bgBlueHalfAlpha;
+    border-color: $bgBlueHalfAlpha;
+    color: $bgBlue;
 }
 
 .btn-primary:not(:disabled):not(.disabled):active {
-    border-color: rgba(255, 255, 255, 0.5) !important;
-    color: #9bc8c9;
+    border-color: $bgBlueHalfAlpha !important;
+    color: $bgBlue;
 }
 
 .btn-primary:focus,.btn-primar:active:focus, .btn-primary.dropdown-toggle:focus {
-    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
-    border-color: rgba(255, 255, 255, 0.5);
-    color: #9bc8c9;
+    box-shadow: 0 0 0 0.2rem $bgBlueHalfAlpha;
+    border-color: $bgBlueHalfAlpha;
+    color: $bgBlue;
 }
 
 .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .show > .btn-primary.dropdown-toggle:focus {
-    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
-    border-color: rgba(255, 255, 255, 0.5);
-    color: #9bc8c9;
+    box-shadow: 0 0 0 0.2rem $bgBlueHalfAlpha;
+    border-color: $bgBlueHalfAlpha;
+    color: $bgBlue;
 }
 
 .modal-header .close {
@@ -168,7 +171,7 @@
 .card-main-title {
     margin-top: 0.75rem;
     margin-bottom: 1.75rem;
-    color: #9bc8c9 !important;
+    color: $bgBlue !important;
 }
 
 .card-main-title-offset {
@@ -182,6 +185,18 @@
     display: block;
 }
 
+.modal-header .h4 {
+    color: $bgBlue;
+}
+
+ol {
+    color: $bgBlue;
+}
+
+h5 {
+    color: $bgBlue;
+}
+
 code {
     font-family: 'Futura Std', sans-serif;
     font-weight: 300;
@@ -192,5 +207,5 @@ code {
 }
 
 em {
-    color: #9bc8c9;
+    color: $bgBlue;
 }
