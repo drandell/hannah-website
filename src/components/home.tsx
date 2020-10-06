@@ -123,14 +123,14 @@ export class Home extends Component<{}, HomeProps> {
                                             <Col>
                                                 <div className="card card-custom-mini shadow rounded">
                                                     <div className="card-body">
-                                                        <h4 className="card-title text-center">DE + FR &gt; English Translation</h4>
+                                                        <h4 className="card-title text-center">German &amp; French into English Translation</h4>
                                                         <p> 
                                                         I offer a range of linguistic solutions and specialise in translation for various industries. My high attention to detail means that your texts will be translated to an excellent standard. 
                                                         </p>
                                                     </div>
                                                 </div>
                                             </Col>
-                                            <Col >
+                                                <Col >
                                                     <div className="card card-custom-mini shadow rounded">
                                                         <div className="card-body">
                                                             <h4 className="card-title text-center">Proofreading</h4>
@@ -155,7 +155,7 @@ export class Home extends Component<{}, HomeProps> {
                                                 <Col>
                                                     <div className="card card-custom-mini shadow rounded">
                                                         <div className="card-body">
-                                                            <h4 className="card-title text-center"> US into UK English</h4>
+                                                            <h4 className="card-title text-center">US into UK English</h4>
                                                             <p> 
                                                             Despite being the same language, both US English and UK English often use different spelling or even completely different terms to describe the same thing. I can tailor your text for the British market.
                                                             </p>
