@@ -16,7 +16,7 @@ Have you written an article, a review or even a book, and are now looking to exp
 
 2. ##### Proofreading
 
-The general rule of thumb is to always translate into your mother tongue. But sometimes, you may often see text in English that has clearly been translated by a non-native English speaker, which is where errors can occur. Or, you may have even written a piece of text yourself in English but are worried about it not sounding natural. If you’re a company, and are serious about expanding to the UK market, it is really important that your content is accurate for your target audience.
+The general rule of thumb is to always translate into your mother tongue. But sometimes, you may often see text in English that has clearly been translated by a non-native English speaker, which is where errors can occur. Or, you may have even written a piece of text yourself in English but are worried about it not sounding natural. If you’re a company and are serious about expanding to the UK market, it is really important that your content is accurate for your target audience.
    
 With a combination of a high attention to detail and being a native speaker of the English language, I can proofread your work for you, check for errors and ensure that the content and style of the text is completely accurate. 
 
