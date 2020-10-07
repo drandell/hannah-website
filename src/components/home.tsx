@@ -123,7 +123,7 @@ export class Home extends Component<{}, HomeProps> {
                                             <Col>
                                                 <div className="card card-custom-mini shadow rounded">
                                                     <div className="card-body">
-                                                        <h4 className="card-title text-center">German &amp; French into English Translation</h4>
+                                                        <h4 className="card-title text-center">German &amp; French into English</h4>
                                                         <p> 
                                                         I offer a range of linguistic solutions and specialise in translation for various industries. My high attention to detail means that your texts will be translated to an excellent standard. 
                                                         </p>
