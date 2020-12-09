@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Home } from './home';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { ContactMe } from './contact-me';
 
 export class Main extends Component {
 
@@ -9,7 +8,6 @@ export class Main extends Component {
         return (
             <Router basename={`${process.env.PUBLIC_URL}/`}>
                 <Switch>
-                    <Route exact path='/contact-me' component={ContactMe} /> 
                     <Route exact path='/' component={Home} />
                 </Switch>
             </Router>

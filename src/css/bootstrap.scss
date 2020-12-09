@@ -209,3 +209,18 @@ code {
 em {
     color: $bgBlue;
 }
+
+a:hover {
+    color: transparent;
+    text-decoration: none;
+}
+
+.react-icons { 
+    padding-right: '5px';
+    size: 1.5em;
+    color: white;
+}
+
+.react-icons:hover { 
+    color: $bgBlueHalfAlpha;
+}

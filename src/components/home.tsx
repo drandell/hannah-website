@@ -5,12 +5,15 @@ import { Col, Container, Nav, Navbar, Row,  Modal, Button } from "react-bootstra
 import { MDBNavbar, MDBHamburgerToggler, MDBCollapse, MDBNavbarNav } from "mdbreact";
 import Media from "react-media";
 import Footer from "./footer";
+import { FaInstagram, FaLinkedin } from 'react-icons/fa';
 import { JumbotronLogo } from "./jumbotron-logo";
 import ReactMarkdown from 'react-markdown/with-html'
 
 import aboutMe from "../markdown/about_me.md";
 import learnMore from "../markdown/learn_more.md";
 import testimonials from "../markdown/testimonials.md";
+import { IconContext } from "react-icons/lib";
+import { JumbotronPromo } from "./jumbotron-promo";
 
 interface HomeProps {
     files: Map<string, string>;
@@ -106,17 +109,15 @@ export class Home extends Component<{}, HomeProps> {
                     <main role="main">
                         <JumbotronLogo />
                         <Fade cascade triggerOnce fraction={0.25} duration={150}>
-                        <div className="col-md-4">
-                            <div className="card card-custom" ref={this.aboutMeRef}>
-                                <div className="card-body">
-                                    <h4 className="card-main-title text-center">About Me</h4>
-                                    <ReactMarkdown source={markdown.files.get('about')} skipHtml={true} />
-                                </div>
+                        <div className="card card-custom" ref={this.aboutMeRef}>
+                            <div className="card-body">
+                                <h4 className="card-main-title text-center">About Me</h4>
+                                <ReactMarkdown source={markdown.files.get('about')} skipHtml={true} />
                             </div>
                         </div>
-                        <div className="col-md-4">
-                             <div className="card card-custom bg-custom" ref={this.servicesRef}>
-                                <div>
+                        <JumbotronPromo />
+                        <div className="card card-custom bg-custom" ref={this.servicesRef}>
+                            <div>
                                     <h4 className="card-main-title-offset text-center">Services</h4>
                                     <Container fluid className="text-center">
                                         <Row>
@@ -180,19 +181,24 @@ export class Home extends Component<{}, HomeProps> {
                                         </Container>
                                     </div>
                                 </div>
-                            </div>
-                            <div className="col-md-4">
                                 <div className="card card-custom" ref={this.testimonialsRef}>
                                     <div className="card-body">
                                         <h4 className="card-main-title text-center">Testimonials</h4>
                                         <ReactMarkdown source={markdown.files.get('testimonials')} skipHtml={false} escapeHtml={false} />
                                     </div>
                                 </div>
-                            </div>
-                            <div className="col-md-4">
                                 <div className="card card-custom bg-custom" ref={this.contactRef}>
                                     <div>
-                                        <h4 className="card-main-title-offset text-center">Contact Me</h4>
+                                        <h4 className="card-main-title-offset text-center" >
+                                            Contact Me
+                                            
+                                            <IconContext.Provider value={{ className: 'react-icons' }}>
+                                                <div style={{ float: "right" }}>
+                                                    <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/hlmtranslations/"> <FaInstagram style={{ marginRight: "5px"  }} /> </a>
+                                                    <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/company/hlm-translations/"> <FaLinkedin /> </a>
+                                                </div> 
+                                            </IconContext.Provider>  
+                                        </h4>                               
                                         <Container fluid className="text-center">
                                             <Row>
                                                 <Col>
@@ -202,7 +208,6 @@ export class Home extends Component<{}, HomeProps> {
                                         </Container>
                                     </div>
                                 </div>
-                            </div>
                         </Fade>
                     </main>
                 <Footer />
