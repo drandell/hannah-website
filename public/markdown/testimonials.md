@@ -8,6 +8,10 @@ _Eliakim, Camden Barbershop Company_
 
 _Korenia, PlusDental_
 
+> `It was such a pleasure working with Hannah. She was tasked with translating the book ‘Histoires de l’alimentation’ from French into English within 3 months. We are very happy with Hannah’s work. Not only is it an accurate translation, but she even completed every chapter ahead of her deadlines and always communicated very well. Well done Hannah! We look forward to working with you again.`
+
+_Saori, Cookpad_
+<br>
 
 > `Hannah did a flawless job as usual. We are very satisfied with her work and will definitely continue to work with her in the future. It was a very good decision to hire her.`
 
@@ -18,7 +22,3 @@ _Client_
 
 _Client_
 <br>
-
-> `We love to work with Hannah. She is an excellent translator. She is very communicative, fast and reliable. I hope to work with her soon again. Highly recommended.`
-
-_Client_
