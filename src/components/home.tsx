@@ -7,7 +7,7 @@ import Media from "react-media";
 import Footer from "./footer";
 import { FaInstagram, FaLinkedin } from 'react-icons/fa';
 import { JumbotronLogo } from "./jumbotron-logo";
-import ReactMarkdown from 'react-markdown/with-html'
+import ReactMarkdownWithHtml from 'react-markdown/with-html'
 
 import aboutMe from "../markdown/about_me.md";
 import learnMore from "../markdown/learn_more.md";
@@ -112,7 +112,7 @@ export class Home extends Component<{}, HomeProps> {
                         <div className="card card-custom" ref={this.aboutMeRef}>
                             <div className="card-body">
                                 <h4 className="card-main-title text-center">About Me</h4>
-                                <ReactMarkdown source={markdown.files.get('about')} skipHtml={true} />
+                                <ReactMarkdownWithHtml children={markdown.files.get('about') || ''} skipHtml={true} />
                             </div>
                         </div>
                         <JumbotronPromo />
@@ -170,7 +170,7 @@ export class Home extends Component<{}, HomeProps> {
                                                 <Modal.Title>Services</Modal.Title>
                                                 </Modal.Header>
                                                 <Modal.Body>
-                                                    <ReactMarkdown source={markdown.files.get('learnMore')} skipHtml={true} />
+                                                    <ReactMarkdownWithHtml skipHtml={true} children={markdown.files.get('learnMore') || ''} />
                                                 </Modal.Body>
                                                 <Modal.Footer>
                                                 <Button variant="secondary" onClick={this.handleClose}>
@@ -184,7 +184,7 @@ export class Home extends Component<{}, HomeProps> {
                                 <div className="card card-custom" ref={this.testimonialsRef}>
                                     <div className="card-body">
                                         <h4 className="card-main-title text-center">Testimonials</h4>
-                                        <ReactMarkdown source={markdown.files.get('testimonials')} skipHtml={false} escapeHtml={false} />
+                                        <ReactMarkdownWithHtml children={markdown.files.get('testimonials') || ''} />
                                     </div>
                                 </div>
                                 <div className="card card-custom bg-custom" ref={this.contactRef}>
