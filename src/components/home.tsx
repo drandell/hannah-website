@@ -193,7 +193,7 @@ export class Home extends Component<{}, HomeProps> {
                                             Contact Me
                                             
                                             <IconContext.Provider value={{ className: 'react-icons' }}>
-                                                <div style={{ float: "right" }}>
+                                                <div style={{ position: "absolute", right: "40px", top: "44px" }}>
                                                     <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/hlmtranslations/"> <FaInstagram style={{ marginRight: "5px"  }} /> </a>
                                                     <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/company/hlm-translations/"> <FaLinkedin /> </a>
                                                 </div> 
