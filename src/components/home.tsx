@@ -14,6 +14,7 @@ import learnMore from "../markdown/learn_more.md";
 import testimonials from "../markdown/testimonials.md";
 import { IconContext } from "react-icons/lib";
 import { JumbotronPromo } from "./jumbotron-promo";
+import hlm from '../images/hlm.jpg'; 
 
 interface HomeProps {
     files: Map<string, string>;
@@ -41,6 +42,10 @@ export class Home extends Component<{}, HomeProps> {
     
     componentDidMount() {
         let map = new Map();
+        //this.getData(map, aboutMe, 'about');
+        //this.getData(map, learnMore, 'learnMore');
+        //this.getData(map, testimonials, 'testimonials');
+        
         fetch(aboutMe).then((res) => res.text()).then((md) => {
             map.set('about', md);
             this.setState({ files: map })
@@ -56,6 +61,16 @@ export class Home extends Component<{}, HomeProps> {
 
         this.handleShow = this.handleShow.bind(this);
 		this.handleClose = this.handleClose.bind(this);
+    }
+
+    getData(map: Map<any, any>, file: string, key: string) {
+        let isMounted = true; // note this flag denote mount status
+        fetch(file).then((res) => res.text()).then((md) => {
+            map.set(key, md);
+            if (isMounted) this.setState({ files: map })
+        });
+
+        return () => { isMounted = false }; 
     }
 
     scrollToRef = (ref: RefObject<HTMLDivElement>) => {
@@ -75,6 +90,13 @@ export class Home extends Component<{}, HomeProps> {
     setCollapsed(newCollapse: boolean) {
         this.setState( { collapsed: newCollapse });
     }
+
+    style = {
+        maxHeight: "30%",
+        maxWidth: "30%",
+        paddingTop: "2.5%",
+        paddingBottom: "5%"
+    };
 
     render() {
         let markdown = this.state;
@@ -111,7 +133,11 @@ export class Home extends Component<{}, HomeProps> {
                         <Fade cascade triggerOnce fraction={0.25} duration={150}>
                         <div className="card card-custom" ref={this.aboutMeRef}>
                             <div className="card-body">
-                                <h4 className="card-main-title text-center">About Me</h4>
+                                
+                                <div>
+                                    <h4 className="card-main-title text-center">About Me</h4>
+                                    <img src={hlm} alt="HLM" style={this.style} />
+                                </div>
                                 <ReactMarkdownWithHtml children={markdown.files.get('about') || ''} skipHtml={true} />
                             </div>
                         </div>
