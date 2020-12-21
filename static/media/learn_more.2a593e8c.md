@@ -1,6 +1,6 @@
 1.	##### GE + FR > EN Translation
 
-Over the course of my career as a freelance translator, I have gained extensive experience in translating a wide range of texts. Whether it’s a CV or a travel brochure that needs translating, I can deliver high-quality and accurate translations. Here are the services I can provide for you: 
+Over the course of my career as a freelance translator, I have gained extensive experience in translating a wide range of texts. Whether it’s a CV or a travel brochure that needs translating, I can deliver high-quality and accurate translations using SDL Trados Studio 2021. Here are the services I can provide for you: 
 
 -	**Dental and Medical Translations:**
 This is where my expertise lies. I can translate anything related to the dental industry: a dental aligner brochure, patient questionnaires, documents relating to clinical trials, letters to patients. You can rely on me to produce excellent translations for you. 
