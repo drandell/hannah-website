@@ -91,13 +91,6 @@ export class Home extends Component<{}, HomeProps> {
         this.setState( { collapsed: newCollapse });
     }
 
-    style = {
-        maxHeight: "30%",
-        maxWidth: "30%",
-        paddingTop: "2.5%",
-        paddingBottom: "5%"
-    };
-
     render() {
         let markdown = this.state;
         return (
@@ -136,7 +129,7 @@ export class Home extends Component<{}, HomeProps> {
                                 
                                 <div>
                                     <h4 className="card-main-title text-center">About Me</h4>
-                                    <img src={hlm} alt="HLM" style={this.style} />
+                                    <img src={hlm} alt="HLM" className="img" />
                                 </div>
                                 <ReactMarkdownWithHtml children={markdown.files.get('about') || ''} skipHtml={true} />
                             </div>
@@ -219,7 +212,7 @@ export class Home extends Component<{}, HomeProps> {
                                             Contact Me
                                             
                                             <IconContext.Provider value={{ className: 'react-icons' }}>
-                                                <div style={{ position: "absolute", right: "40px", top: "44px" }}>
+                                                <div style={{ position: "absolute", right: "40px", top: "28px" }}>
                                                     <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/hlmtranslations/"> <FaInstagram style={{ marginRight: "5px"  }} /> </a>
                                                     <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/company/hlm-translations/"> <FaLinkedin /> </a>
                                                 </div> 

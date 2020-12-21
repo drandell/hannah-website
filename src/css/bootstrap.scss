@@ -32,9 +32,25 @@ $bgBlueHalfAlpha: rgba(255, 255, 255, 0.5);
         max-height: 350px;
         height: 350px;
     }
+
+    .img {
+        min-height: 20%;
+        min-width: 20%;
+        max-height: 35%;
+        max-width: 35%;
+        padding-top: 2.5%;
+        padding-bottom: 3%;
+    }
+
+    .img-logo {
+        min-width: 10%;
+        min-height: 10%;
+        max-height: 15%;
+        max-width: 15%;
+    }
 }
 
-@media screen and (min-width: 400px) and (max-width: 799px) {
+@media screen and (min-width: 400px) and (max-width: 800px) {
     .card-custom {
         padding: 2rem 2rem 0rem 2rem;
     }  
@@ -47,6 +63,22 @@ $bgBlueHalfAlpha: rgba(255, 255, 255, 0.5);
     .jumbotron {
         max-height: 400px;
         height: 400px;
+    }
+
+    .img {
+        min-height: 30%;
+        min-width: 30%;
+        max-height: 35%;
+        max-width: 35%;
+        padding-top: 2.5%;
+        padding-bottom: 3%;
+    }
+
+    .img-logo {
+        min-width: 10%;
+        min-height: 10%;
+        max-height: 15%;
+        max-width: 15%;
     }
 }
 
@@ -65,6 +97,20 @@ $bgBlueHalfAlpha: rgba(255, 255, 255, 0.5);
         max-height: 500px;
         height: 500px;
     }
+
+    .img {
+        max-height: 30%;
+        max-width: 30%;
+        padding-top: 2.5%;
+        padding-bottom: 3%;
+    }
+
+    .img-logo {
+        min-width: 10%;
+        min-height: 10%;
+        max-height: 15%;
+        max-width: 15%;
+    }
 }
 
 @media screen and (min-width: 1100px) {
@@ -81,6 +127,20 @@ $bgBlueHalfAlpha: rgba(255, 255, 255, 0.5);
     .jumbotron {
         max-height: 500px;
         height: 500px;
+    }
+
+    .img {
+        max-height: 30%;
+        max-width: 30%;
+        padding-top: 2.5%;
+        padding-bottom: 5%;
+    }
+
+    .img-logo {
+        min-width: 10%;
+        min-height: 10%;
+        max-height: 15%;
+        max-width: 15%;
     }
 }
 

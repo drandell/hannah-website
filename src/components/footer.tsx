@@ -22,7 +22,7 @@ export default class Footer extends React.Component {
             <footer className="text-muted py-5">
                 <div className="container">
                         <Col className="text-center">
-                            <img src={aitiLogo} alt="Aiti Logo" style={this.style} />
+                            <img src={aitiLogo} alt="Aiti Logo" className="img-logo" />
                             <p className="font-weight-light">
                                 <br />Associate member of the ITI (membership no. 00020564). 
                                 <br />This membership is attached to me as an individual and not HLM Translations.
