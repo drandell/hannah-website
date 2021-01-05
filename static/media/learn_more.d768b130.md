@@ -26,6 +26,6 @@ Machine translation has drastically improved over the years thanks to AI machine
   
 MT is great if you’re simply looking up something on a website and want to use it to get an idea of what the text means. However, if you want a translation that needs a lot of creativity as well as true accuracy, only a human translator can provide this for you. 
 
-4. ##### US into UK English
+4. ##### Localisation
 
-Despite being the same language, there are many differences between UK and US English. This goes further than just spelling (for example: colour, color). Text that has been written for the US market will not necessarily work for the UK market, and vice versa. It is important that if you have American English text and are looking to bring this to a UK audience, adjustments will need to be made before publishing it. I will be able to adapt your US English text and tailor it to the UK market. 
+Localisation and translation share some characteristics, but localisation does go one step further. It is a process that involves adapting content to a particular language and culture to make it sound more natural and culturally appropriate to its target audience. Whether you need an American website localised to a UK audience or vice-versa, I can tailor your text for a specific English-speaking market.
