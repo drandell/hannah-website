@@ -175,9 +175,9 @@ export class Home extends Component<{}, HomeProps> {
                                                 <Col>
                                                     <div className="card card-custom-mini shadow rounded">
                                                         <div className="card-body">
-                                                            <h4 className="card-title text-center">US into UK English</h4>
+                                                            <h4 className="card-title text-center">Localisation</h4>
                                                             <p> 
-                                                            Despite being the same language, both US English and UK English often use different spelling or even completely different terms to describe the same thing. I can tailor your text for the British market.
+                                                            Localisation is a process that involves adapting content to a particular language and culture to make it sound natural and culturally appropriate. I can tailor your text for a specific English-speaking market.
                                                             </p>
                                                         </div>
                                                     </div>
