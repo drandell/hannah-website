@@ -1,18 +1,18 @@
 1.	##### GE + FR > EN Translation
 
-Over the course of my career as a freelance translator, I have gained extensive experience in translating a wide range of texts. Whether it’s a CV or a travel brochure that needs translating, I can deliver high-quality and accurate translations using SDL Trados Studio 2021. Here are the services I can provide for you: 
+Over the course of my career as a freelance translator I have gained extensive experience in translating a wide range of texts. My high attention to detail means that your texts will be translated to an excellent standard. Here are the services I can provide for you:  
 
--	**Dental and Medical Translations:**
-This is where my expertise lies. I can translate anything related to the dental industry: a dental aligner brochure, patient questionnaires, documents relating to clinical trials, letters to patients. You can rely on me to produce excellent translations for you. 
+-	**Medical (Dental) Translation:**
+This is where my expertise lies. I can translate anything related to this industry: medical device brochures, patient forms, treatment guidelines, website content, product packaging. You can rely on me to produce excellent translations for you.  
 
--	**Business & Marketing Translations:**
-I can translate all things related to your business: your website, presentations, business reports, HR documents, press releases, adverts, or marketing content – I can help your business produce accurate content to the English-speaking market. 
+-	**Business & Marketing Translation:**
+I can translate all things related to your business: your website, blog posts, press releases, product listings (SEO), social media content, presentations, business correspondence, reports, HR documents – I can help your business produce accurate content to the English-speaking market.  
 
--	**General Translations:**
-I can translate your CV, birth certificates, emails, letters, Amazon product listings. You name it, I can do it. 
+-	**Technical Translation:**
+Whether you need instruction manuals for equipment & accessories, training guides, or product brochures, you can count on me to translate your documents with complete precision.  
 
--	**Arts & Literary Translations:**
-Have you written an article, a review or even a book, and are now looking to expand your audience? I am here to help you! 
+-	**Arts & Literary Translation:**
+Have you written an article, a review or a book, and are now looking to expand your audience? I am here to help you! 
 
 2. ##### Proofreading
 
