@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { Component } from 'react';
+import { Component } from 'react';
 import logo from '../images/logo.png'; // Tell webpack this JS file uses this image
 
 export class JumbotronLogo extends Component {
