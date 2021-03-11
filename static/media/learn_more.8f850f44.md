@@ -11,8 +11,8 @@ I can translate all things related to your business: your website, blog posts, p
 -	**Technical Translation:**
 Whether you need instruction manuals for equipment & accessories, training guides, or product brochures, you can count on me to translate your documents with complete precision.  
 
--	**Arts & Literary Translation:**
-Have you written an article, a review or a book, and are now looking to expand your audience? I am here to help you! 
+-	**Website Translation:**
+If you’re looking to expand your business to the English-speaking market and require a high-quality translation of your website, I’m the person for the job! With my extensive experience translating websites for a wide range of clients, I will cover the translation and localisation of your website’s content including text, images, and other visual aspects to help you reach a wider audience.
 
 2. ##### Proofreading
 
