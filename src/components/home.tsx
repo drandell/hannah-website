@@ -1,6 +1,6 @@
 
 import React, { Component, createRef, RefObject } from "react";
-import { Fade } from "react-awesome-reveal";
+//import { Fade } from "react-awesome-reveal";
 import { Col, Container, Nav, Navbar, Row,  Modal, Button } from "react-bootstrap";
 import { MDBNavbar, MDBHamburgerToggler, MDBCollapse, MDBNavbarNav } from "mdbreact";
 import Media from "react-media";
@@ -28,11 +28,9 @@ export class Home extends Component<{}, HomeProps> {
     private aboutMeRef = createRef<HTMLDivElement>();
     private testimonialsRef = createRef<HTMLDivElement>();
     private contactRef = createRef<HTMLDivElement>();
-    scrollToContent: any;
 
     constructor(props: HomeProps) {
         super(props);
-
         this.state = { 
             files: new Map([]),
             show: false,
@@ -42,9 +40,9 @@ export class Home extends Component<{}, HomeProps> {
     
     componentDidMount() {
         let map = new Map();
-        //this.getData(map, aboutMe, 'about');
-        //this.getData(map, learnMore, 'learnMore');
-        //this.getData(map, testimonials, 'testimonials');
+        this.getData(map, aboutMe, 'about');
+        this.getData(map, learnMore, 'learnMore');
+        this.getData(map, testimonials, 'testimonials');
         
         fetch(aboutMe).then((res) => res.text()).then((md) => {
             map.set('about', md);
@@ -58,10 +56,12 @@ export class Home extends Component<{}, HomeProps> {
             map.set('testimonials', md);
             this.setState({ files: map })
         });
-
-        this.handleShow = this.handleShow.bind(this);
-		this.handleClose = this.handleClose.bind(this);
     }
+
+    SAFE_componentWillMount() {
+        this.handleClose = this.handleClose.bind(this);
+        this.handleShow = this.handleShow.bind(this);
+    }  
 
     getData(map: Map<any, any>, file: string, key: string) {
         let isMounted = true; // note this flag denote mount status
@@ -123,7 +123,6 @@ export class Home extends Component<{}, HomeProps> {
                 </header>
                     <main role="main">
                         <JumbotronLogo />
-                        <Fade cascade triggerOnce fraction={0.25} duration={150}>
                         <div className="card card-custom" ref={this.aboutMeRef}>
                             <div className="card-body">
                                 
@@ -227,7 +226,6 @@ export class Home extends Component<{}, HomeProps> {
                                         </Container>
                                     </div>
                                 </div>
-                        </Fade>
                     </main>
                 <Footer />
             </>
