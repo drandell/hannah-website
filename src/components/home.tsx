@@ -5,7 +5,7 @@ import { Col, Container, Nav, Navbar, Row,  Modal, Button } from "react-bootstra
 import { MDBNavbar, MDBHamburgerToggler, MDBCollapse, MDBNavbarNav } from "mdbreact";
 import Media from "react-media";
 import Footer from "./footer";
-import { FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import { JumbotronLogo } from "./jumbotron-logo";
 import ReactMarkdownWithHtml from 'react-markdown/with-html'
 
@@ -212,6 +212,7 @@ export class Home extends Component<{}, HomeProps> {
                                             
                                             <IconContext.Provider value={{ className: 'react-icons' }}>
                                                 <div style={{ position: "absolute", right: "40px", top: "28px" }}>
+                                                    <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/HLMTranslations"> <FaTwitter style={{ marginRight: "5px"  }} /> </a>
                                                     <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/hlmtranslations/"> <FaInstagram style={{ marginRight: "5px"  }} /> </a>
                                                     <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/company/hlm-translations/"> <FaLinkedin /> </a>
                                                 </div> 
