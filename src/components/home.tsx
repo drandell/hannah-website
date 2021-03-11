@@ -209,14 +209,16 @@ export class Home extends Component<{}, HomeProps> {
                                     <div>
                                         <h4 className="card-main-title-offset text-center" >
                                             Contact Me
-                                            
-                                            <IconContext.Provider value={{ className: 'react-icons' }}>
-                                                <div style={{ position: "absolute", right: "40px", top: "28px" }}>
-                                                    <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/HLMTranslations"> <FaTwitter style={{ marginRight: "5px"  }} /> </a>
-                                                    <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/hlmtranslations/"> <FaInstagram style={{ marginRight: "5px"  }} /> </a>
-                                                    <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/company/hlm-translations/"> <FaLinkedin /> </a>
-                                                </div> 
-                                            </IconContext.Provider>  
+                                            <Media query="(min-width: 500px)" render={() => (
+                                                <IconContext.Provider value={{ className: 'react-icons' }}>
+                                                    <div style={{ position: "absolute", right: "40px", top: "28px" }}>
+                                                        <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/HLMTranslations"> <FaTwitter style={{ marginRight: "5px"  }} /> </a>
+                                                        <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/hlmtranslations/"> <FaInstagram style={{ marginRight: "5px"  }} /> </a>
+                                                        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/company/hlm-translations/"> <FaLinkedin /> </a>
+                                                    </div> 
+                                                </IconContext.Provider>  
+                                            )}
+                                            />                                
                                         </h4>                               
                                         <Container fluid className="text-center">
                                             <Row>
@@ -224,6 +226,20 @@ export class Home extends Component<{}, HomeProps> {
                                                     <p>If you would like to request a quote or wish to learn more about my services, please do not hesitate to contact me at <a href="mailto:info@hlm-translations.co.uk?subject=Email Enquiry">info@hlm-translations.co.uk</a></p>
                                                 </Col>
                                             </Row>
+                                            <Media query="(max-width: 499px)" render={() => (
+                                                <Row>
+                                                    <Col>    
+                                                        <IconContext.Provider value={{ className: 'react-icons' }}>
+                                                            <div >
+                                                                <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/HLMTranslations"> <FaTwitter size={28} style={{ marginRight: "5px"  }} /> </a>
+                                                                <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/hlmtranslations/"> <FaInstagram size={28} style={{ marginRight: "5px"  }} /> </a>
+                                                                <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/company/hlm-translations/"> <FaLinkedin size={28} /> </a>
+                                                            </div> 
+                                                        </IconContext.Provider>  
+                                                    </Col>
+                                                </Row>
+                                            )}
+                                            /> 
                                         </Container>
                                     </div>
                                 </div>
