@@ -1,6 +1,6 @@
 
-import React, { Component, createRef, RefObject } from "react";
-//import { Fade } from "react-awesome-reveal";
+import { Component, createRef, RefObject } from "react";
+import { Fade } from "react-awesome-reveal";
 import { Col, Container, Nav, Navbar, Row,  Modal, Button } from "react-bootstrap";
 import { MDBNavbar, MDBHamburgerToggler, MDBCollapse, MDBNavbarNav } from "mdbreact";
 import Media from "react-media";
@@ -122,21 +122,27 @@ export class Home extends Component<{}, HomeProps> {
                     />
                 </header>
                     <main role="main">
-                        <JumbotronLogo />
+                        <Fade delay={50} triggerOnce={true} fraction={0.2}>
+                            <JumbotronLogo />           
+                        </Fade>      
                         <div className="card card-custom" ref={this.aboutMeRef}>
-                            <div className="card-body">
-                                
-                                <div>
-                                    <h4 className="card-main-title text-center">About Me</h4>
-                                    <img src={hlm} alt="HLM" className="img" />
+                            <Fade delay={50} triggerOnce={true} fraction={0.25}>
+                                <div className="card-body">                                
+                                    <div>
+                                        <h4 className="card-main-title text-center">About Me</h4>
+                                        <img src={hlm} alt="HLM" className="img" />
+                                    </div>
+                                    <ReactMarkdownWithHtml children={markdown.files.get('about') || ''} skipHtml={true} />
                                 </div>
-                                <ReactMarkdownWithHtml children={markdown.files.get('about') || ''} skipHtml={true} />
-                            </div>
+                            </Fade>
                         </div>
-                        <JumbotronPromo />
+                        <Fade delay={50} triggerOnce={true} fraction={0.1}>
+                            <JumbotronPromo />
+                        </Fade>
                         <div className="card card-custom bg-custom" ref={this.servicesRef}>
+                            <Fade delay={50} triggerOnce={true} fraction={0.25}>
                             <div>
-                                    <h4 className="card-main-title-offset text-center">Services</h4>
+                                <h4 className="card-main-title-offset text-center">Services</h4>
                                     <Container fluid className="text-center">
                                         <Row>
                                             <Col>
@@ -198,50 +204,55 @@ export class Home extends Component<{}, HomeProps> {
                                             </Modal>
                                         </Container>
                                     </div>
+                                    </Fade>
                                 </div>
                                 <div className="card card-custom" ref={this.testimonialsRef}>
-                                    <div className="card-body">
-                                        <h4 className="card-main-title text-center">Testimonials</h4>
-                                        <ReactMarkdownWithHtml children={markdown.files.get('testimonials') || ''} />
-                                    </div>
+                                    <Fade delay={50} triggerOnce={true} fraction={0.25}>
+                                        <div className="card-body">
+                                            <h4 className="card-main-title text-center">Testimonials</h4>
+                                            <ReactMarkdownWithHtml children={markdown.files.get('testimonials') || ''} />
+                                        </div>
+                                    </Fade>
                                 </div>
                                 <div className="card card-custom bg-custom" ref={this.contactRef}>
-                                    <div>
-                                        <h4 className="card-main-title-offset text-center" >
-                                            Contact Me
-                                            <Media query="(min-width: 500px)" render={() => (
-                                                <IconContext.Provider value={{ className: 'react-icons' }}>
-                                                    <div style={{ position: "absolute", right: "40px", top: "28px" }}>
-                                                        <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/HLMTranslations"> <FaTwitter style={{ marginRight: "5px"  }} /> </a>
-                                                        <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/hlmtranslations/"> <FaInstagram style={{ marginRight: "5px"  }} /> </a>
-                                                        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/company/hlm-translations/"> <FaLinkedin /> </a>
-                                                    </div> 
-                                                </IconContext.Provider>  
-                                            )}
-                                            />                                
-                                        </h4>                               
-                                        <Container fluid className="text-center">
-                                            <Row>
-                                                <Col>
-                                                    <p>If you would like to request a quote or wish to learn more about my services, please do not hesitate to contact me at <a href="mailto:info@hlm-translations.co.uk?subject=Email Enquiry">info@hlm-translations.co.uk</a></p>
-                                                </Col>
-                                            </Row>
-                                            <Media query="(max-width: 499px)" render={() => (
+                                    <Fade delay={50} triggerOnce={true} fraction={0.25}>
+                                        <div>
+                                            <h4 className="card-main-title-offset text-center" >
+                                                Contact Me
+                                                <Media query="(min-width: 500px)" render={() => (
+                                                    <IconContext.Provider value={{ className: 'react-icons' }}>
+                                                        <div style={{ position: "absolute", right: "40px", top: "28px" }}>
+                                                            <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/HLMTranslations"> <FaTwitter style={{ marginRight: "5px"  }} /> </a>
+                                                            <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/hlmtranslations/"> <FaInstagram style={{ marginRight: "5px"  }} /> </a>
+                                                            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/company/hlm-translations/"> <FaLinkedin /> </a>
+                                                        </div> 
+                                                    </IconContext.Provider>  
+                                                )}
+                                                />                                
+                                            </h4>                               
+                                            <Container fluid className="text-center">
                                                 <Row>
-                                                    <Col>    
-                                                        <IconContext.Provider value={{ className: 'react-icons' }}>
-                                                            <div >
-                                                                <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/HLMTranslations"> <FaTwitter size={28} style={{ marginRight: "5px"  }} /> </a>
-                                                                <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/hlmtranslations/"> <FaInstagram size={28} style={{ marginRight: "5px"  }} /> </a>
-                                                                <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/company/hlm-translations/"> <FaLinkedin size={28} /> </a>
-                                                            </div> 
-                                                        </IconContext.Provider>  
+                                                    <Col>
+                                                        <p>If you would like to request a quote or wish to learn more about my services, please do not hesitate to contact me at <a href="mailto:info@hlm-translations.co.uk?subject=Email Enquiry">info@hlm-translations.co.uk</a></p>
                                                     </Col>
                                                 </Row>
-                                            )}
-                                            /> 
-                                        </Container>
-                                    </div>
+                                                <Media query="(max-width: 499px)" render={() => (
+                                                    <Row>
+                                                        <Col>    
+                                                            <IconContext.Provider value={{ className: 'react-icons' }}>
+                                                                <div >
+                                                                    <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/HLMTranslations"> <FaTwitter size={28} style={{ marginRight: "5px"  }} /> </a>
+                                                                    <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/hlmtranslations/"> <FaInstagram size={28} style={{ marginRight: "5px"  }} /> </a>
+                                                                    <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/company/hlm-translations/"> <FaLinkedin size={28} /> </a>
+                                                                </div> 
+                                                            </IconContext.Provider>  
+                                                        </Col>
+                                                    </Row>
+                                                )}
+                                                /> 
+                                            </Container>
+                                        </div>
+                                    </Fade>
                                 </div>
                     </main>
                 <Footer />
