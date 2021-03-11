@@ -58,7 +58,7 @@ export class Home extends Component<{}, HomeProps> {
         });
     }
 
-    SAFE_componentWillMount() {
+    componentWillMount() {
         this.handleClose = this.handleClose.bind(this);
         this.handleShow = this.handleShow.bind(this);
     }  

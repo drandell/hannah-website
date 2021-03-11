@@ -1,5 +1,5 @@
 // This example is live editable
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 
 
 import './css/bootstrap.scss';
