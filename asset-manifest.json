@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.0c50b11e.chunk.css",
-    "main.js": "/static/js/main.3c76e298.chunk.js",
-    "main.js.map": "/static/js/main.3c76e298.chunk.js.map",
+    "main.css": "/static/css/main.fbb274ef.chunk.css",
+    "main.js": "/static/js/main.93af1d5b.chunk.js",
+    "main.js.map": "/static/js/main.93af1d5b.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.19bdbf6e.js",
     "runtime-main.js.map": "/static/js/runtime-main.19bdbf6e.js.map",
     "static/js/2.f2823520.chunk.js": "/static/js/2.f2823520.chunk.js",
     "static/js/2.f2823520.chunk.js.map": "/static/js/2.f2823520.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.0c50b11e.chunk.css.map": "/static/css/main.0c50b11e.chunk.css.map",
+    "static/css/main.fbb274ef.chunk.css.map": "/static/css/main.fbb274ef.chunk.css.map",
     "static/js/2.f2823520.chunk.js.LICENSE.txt": "/static/js/2.f2823520.chunk.js.LICENSE.txt",
     "static/media/about_me.db53a619.md": "/static/media/about_me.db53a619.md",
     "static/media/aiti.7d00051d.png": "/static/media/aiti.7d00051d.png",
@@ -21,7 +21,7 @@
   "entrypoints": [
     "static/js/runtime-main.19bdbf6e.js",
     "static/js/2.f2823520.chunk.js",
-    "static/css/main.0c50b11e.chunk.css",
-    "static/js/main.3c76e298.chunk.js"
+    "static/css/main.fbb274ef.chunk.css",
+    "static/js/main.93af1d5b.chunk.js"
   ]
 }
