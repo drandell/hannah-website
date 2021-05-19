@@ -4,5 +4,5 @@ My passion for languages stems from studying German and French in high school, a
   
 Since returning to the UK, I have worked in Marketing, and I have been working as a freelance translator, specialising in translating texts for a wide range of clients from a variety of industries. I have experience in dental/medical translation, SEO marketing translation, website translation and more. You can find out more about the exact services I provide below.
   
-I am an associate member of the Institute of Translation and Interpreting, which promotes high standards in translation. I have been lucky to find regular clients who not only trust me, and my work, but praise the work I provide for them. There really is no better feeling!  
+I am an associate member of the Institute of Translation and Interpreting and a member of the Chartered Institute of Linguists, both of which promote high standards and proficiency in translation. I have been lucky to find regular clients who not only trust me, and my work, but praise the work I provide for them. There really is no better feeling!
   
