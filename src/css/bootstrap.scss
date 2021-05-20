@@ -43,10 +43,13 @@ $bgBlueHalfAlpha: rgba(255, 255, 255, 0.5);
     }
 
     .img-logo {
-        min-width: 10%;
-        min-height: 10%;
-        max-height: 15%;
-        max-width: 15%;
+        max-height: 40%;
+        max-width: 39%;
+    }
+
+    .img-logo-ciol {
+        max-height: 20%;
+        max-width: 40%;
     }
 }
 
@@ -75,10 +78,13 @@ $bgBlueHalfAlpha: rgba(255, 255, 255, 0.5);
     }
 
     .img-logo {
-        min-width: 10%;
-        min-height: 10%;
-        max-height: 15%;
-        max-width: 15%;
+        max-height: 40%;
+        max-width: 40%;
+    }
+
+    .img-logo-ciol {
+        max-height: 50%;
+        max-width: 50%;
     }
 }
 
@@ -106,10 +112,13 @@ $bgBlueHalfAlpha: rgba(255, 255, 255, 0.5);
     }
 
     .img-logo {
-        min-width: 10%;
-        min-height: 10%;
-        max-height: 15%;
-        max-width: 15%;
+        max-height: 35%;
+        max-width: 35%;
+    }
+
+    .img-logo-ciol {
+        max-height: 90%;
+        max-width: 90%;
     }
 }
 
@@ -137,10 +146,17 @@ $bgBlueHalfAlpha: rgba(255, 255, 255, 0.5);
     }
 
     .img-logo {
-        min-width: 10%;
-        min-height: 10%;
-        max-height: 15%;
-        max-width: 15%;
+        max-height: 33.5%;
+        max-width: 33%;
+    }
+
+    .img-logo-ciol {
+        max-height: 100%;
+        max-width: 100%;
+    }
+
+    .container {
+        max-width: 960px;
     }
 }
 
@@ -224,8 +240,12 @@ $bgBlueHalfAlpha: rgba(255, 255, 255, 0.5);
     text-align: center;
 }
 
-.col {
+.col-cards {
     padding-bottom: 1.5rem;
+}
+
+.col-logos {
+    padding-top: 1.5rem;
 }
 
 .card-main-title {
@@ -235,7 +255,6 @@ $bgBlueHalfAlpha: rgba(255, 255, 255, 0.5);
 }
 
 .card-main-title-offset {
-    //margin-top: 0.75rem;
     margin-bottom: 1.75rem;
     color: white !important;
     font-weight: 400;
@@ -268,6 +287,10 @@ code {
 
 em {
     color: $bgBlue;
+}
+
+a {
+    text-decoration: none;
 }
 
 a:hover {

@@ -2,6 +2,7 @@
 import React from 'react';
 import { Button, Col, Row } from 'react-bootstrap';
 import aitiLogo from '../images/aiti.png'; 
+import ciolLogo from '../images/ciol.png'; 
 
 export default class Footer extends React.Component {
     
@@ -19,16 +20,22 @@ export default class Footer extends React.Component {
 
     render() {
         return (
-            <footer className="text-muted py-5">
+            <footer className="text-muted">
                 <div className="container">
-                        <Col className="text-center">
-                            <img src={aitiLogo} alt="Aiti Logo" className="img-logo" />
-                            <p className="font-weight-light">
-                                <br />Associate member of the ITI (membership no. 00020564). 
-                                <br />This membership is attached to me as an individual and not HLM Translations.
-                            </p>
+                    <Row>
+                    <Col className="justify-content-center text-center align-middle col-logos">
+                            <figure className="figure"> 
+                                <img src={aitiLogo} alt="Ciol Logo" className="figure-img img-logo" />
+                                <figcaption className="figure-caption font-weight-light">Membership no. 63354</figcaption>
+                            </figure>             
                         </Col>
-                    
+                        <Col className="justify-content-center text-center align-middle col-logos">
+                            <figure className="figure"> 
+                                <img src={ciolLogo} alt="Ciol Logo" className="figure-img img-logo-ciol rounded" />
+                                <figcaption className="figure-caption font-weight-light">Membership no. 63354</figcaption>
+                            </figure>             
+                        </Col>
+                    </Row>   
                     <Row>
                         <Col>    
                             <p className="font-weight-light">
@@ -37,7 +44,7 @@ export default class Footer extends React.Component {
                         </Col>
                         <Col>
                             <div onClick={() => this.backToTop()}>
-                                <p className="float-right">
+                                <p className="float-end">
                                     <Button variant="outline-secondary" href="#">Back to Top</Button> 
                                 </p>
                             </div>

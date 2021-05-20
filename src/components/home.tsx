@@ -7,7 +7,8 @@ import Media from "react-media";
 import Footer from "./footer";
 import { FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import { JumbotronLogo } from "./jumbotron-logo";
-import ReactMarkdownWithHtml from 'react-markdown/with-html'
+import ReactMarkdown from 'react-markdown'
+import rehypeRaw from 'rehype-raw'
 
 import aboutMe from "../markdown/about_me.md";
 import learnMore from "../markdown/learn_more.md";
@@ -132,7 +133,7 @@ export class Home extends Component<{}, HomeProps> {
                                         <h4 className="card-main-title text-center">About Me</h4>
                                         <img src={hlm} alt="HLM" className="img" />
                                     </div>
-                                    <ReactMarkdownWithHtml children={markdown.files.get('about') || ''} skipHtml={true} />
+                                    <ReactMarkdown rehypePlugins={[rehypeRaw]} children={markdown.files.get('about') || ''} skipHtml={true} />
                                 </div>
                             </Fade>
                         </div>
@@ -145,7 +146,7 @@ export class Home extends Component<{}, HomeProps> {
                                 <h4 className="card-main-title-offset text-center">Services</h4>
                                     <Container fluid className="text-center">
                                         <Row>
-                                            <Col>
+                                            <Col className="col-cards">
                                                 <div className="card card-custom-mini shadow rounded">
                                                     <div className="card-body">
                                                         <h4 className="card-title text-center">German &amp; French into English</h4>
@@ -155,46 +156,46 @@ export class Home extends Component<{}, HomeProps> {
                                                     </div>
                                                 </div>
                                             </Col>
-                                                <Col >
-                                                    <div className="card card-custom-mini shadow rounded">
-                                                        <div className="card-body">
-                                                            <h4 className="card-title text-center">Proofreading</h4>
-                                                            <p> 
-                                                            It’s quite common for non-native English speakers to translate documents into English. Unfortunately, this is when mistakes are made. I can proofread your text and ensure that it is completely accurate. 
-                                                            </p>
-                                                        </div>
+                                            <Col className="col-cards">
+                                                <div className="card card-custom-mini shadow rounded">
+                                                    <div className="card-body">
+                                                        <h4 className="card-title text-center">Proofreading</h4>
+                                                        <p> 
+                                                        It’s quite common for non-native English speakers to translate documents into English. Unfortunately, this is when mistakes are made. I can proofread your text and ensure that it is completely accurate. 
+                                                        </p>
                                                     </div>
-                                                </Col>
-                                            </Row>
-                                            <Row>
-                                                <Col>
-                                                    <div className="card card-custom-mini shadow rounded">
-                                                        <div className="card-body">
-                                                            <h4 className="card-title text-center">MT Post-Editing</h4>
-                                                            <p> 
-                                                            Machine translation has drastically improved over the last few years thanks to AI, but certain texts will still require a native English speaker to check for and correct any errors.
-                                                            </p>
-                                                        </div>
+                                                </div>
+                                            </Col>
+                                        </Row>
+                                        <Row>
+                                            <Col className="col-cards">
+                                                <div className="card card-custom-mini shadow rounded">
+                                                    <div className="card-body">
+                                                        <h4 className="card-title text-center">MT Post-Editing</h4>
+                                                        <p> 
+                                                        Machine translation has drastically improved over the last few years thanks to AI, but certain texts will still require a native English speaker to check for and correct any errors.
+                                                        </p>
                                                     </div>
-                                                </Col>
-                                                <Col>
-                                                    <div className="card card-custom-mini shadow rounded">
-                                                        <div className="card-body">
-                                                            <h4 className="card-title text-center">Localisation</h4>
-                                                            <p> 
-                                                            Localisation is a process that involves adapting content to a particular language and culture to make it sound natural and culturally appropriate. I can tailor your text for a specific English-speaking market.
-                                                            </p>
-                                                        </div>
+                                                </div>
+                                            </Col>
+                                            <Col className="col-cards">
+                                                <div className="card card-custom-mini shadow rounded">
+                                                    <div className="card-body">
+                                                        <h4 className="card-title text-center">Localisation</h4>
+                                                        <p> 
+                                                        Localisation is a process that involves adapting content to a particular language and culture to make it sound natural and culturally appropriate. I can tailor your text for a specific English-speaking market.
+                                                        </p>
                                                     </div>
-                                                </Col>
-                                            </Row>
+                                                </div>
+                                            </Col>
+                                        </Row>
                                             <Button className="btn-lg button-padding" onClick={this.handleShow}> Learn More </Button>
                                             <Modal size="lg" show={this.state.show} onHide={this.handleClose} centered>
                                                 <Modal.Header className="text-center">
                                                 <Modal.Title>Services</Modal.Title>
                                                 </Modal.Header>
                                                 <Modal.Body>
-                                                    <ReactMarkdownWithHtml skipHtml={true} children={markdown.files.get('learnMore') || ''} />
+                                                    <ReactMarkdown skipHtml={true} children={markdown.files.get('learnMore') || ''} />
                                                 </Modal.Body>
                                                 <Modal.Footer>
                                                 <Button variant="secondary" onClick={this.handleClose}>
@@ -210,7 +211,7 @@ export class Home extends Component<{}, HomeProps> {
                                     <Fade delay={50} triggerOnce={true} fraction={0.25}>
                                         <div className="card-body">
                                             <h4 className="card-main-title text-center">Testimonials</h4>
-                                            <ReactMarkdownWithHtml children={markdown.files.get('testimonials') || ''} />
+                                            <ReactMarkdown rehypePlugins={[rehypeRaw]} children={markdown.files.get('testimonials') || ''} />
                                         </div>
                                     </Fade>
                                 </div>
