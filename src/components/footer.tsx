@@ -25,8 +25,8 @@ export default class Footer extends React.Component {
                     <Row>
                     <Col className="justify-content-center text-center align-middle col-logos">
                             <figure className="figure"> 
-                                <img src={aitiLogo} alt="Ciol Logo" className="figure-img img-logo" />
-                                <figcaption className="figure-caption font-weight-light">Membership no. 63354</figcaption>
+                                <img src={aitiLogo} alt="Aiti Logo" className="figure-img img-logo" />
+                                <figcaption className="figure-caption font-weight-light">Membership no. 00020564</figcaption>
                             </figure>             
                         </Col>
                         <Col className="justify-content-center text-center align-middle col-logos">
