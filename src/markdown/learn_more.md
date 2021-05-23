@@ -1,6 +1,6 @@
 1.	##### GE + FR > EN Translation
 
-Over the course of my career as a freelance translator I have gained extensive experience in translating a wide range of texts. My high attention to detail means that your texts will be translated to an excellent standard. Here are the services I can provide for you:  
+Over the course of my career as a freelance translator, I have gained extensive experience in translating a wide range of texts using SDL Trados. My high attention to detail means that your texts will be translated to an excellent standard. Here are the services I can provide for you:  
 
 -	**Medical (Dental) Translation:**
 This is where my expertise lies. I can translate anything related to this industry: medical device brochures, patient forms, treatment guidelines, website content, product packaging. You can rely on me to produce excellent translations for you.  
