@@ -1,18 +1,15 @@
-1.	##### GE + FR > EN Translation
+1.	##### DE + FR > EN Translation
 
-Over the course of my career as a freelance translator, I have gained extensive experience in translating a wide range of texts using SDL Trados. My high attention to detail means that your texts will be translated to an excellent standard. Here are the services I can provide for you:  
+Over the course of my career as a freelance translator, I have gained extensive experience in translating a wide range of texts using SDL Trados. My high attention to detail means that your texts will be translated to an excellent standard. Here's what I can do for you:  
 
 -	**Medical (Dental) Translation:**
-This is where my expertise lies. I can translate anything related to this industry: medical device brochures, patient forms, treatment guidelines, website content, product packaging. You can rely on me to produce excellent translations for you.  
+This is where my expertise lies. I can translate anything related to this industry: medical device brochures, IPR content, patient forms, treatment guidelines, product packaging. You can rely on me to produce excellent work for you.  
 
 -	**Business & Marketing Translation:**
-I can translate all things related to your business: your website, blog posts, press releases, product listings (SEO), social media content, presentations, business correspondence, reports, HR documents – I can help your business produce accurate content to the English-speaking market.  
-
--	**Technical Translation:**
-Whether you need instruction manuals for equipment & accessories, training guides, or product brochures, you can count on me to translate your documents with complete precision.  
+I can translate your marketing content for your business: blog posts, social media content, press releases, product descriptions, website, adverts, presentations, business correspondence – let me help you produce accurate content for the English-speaking market.    
 
 -	**Website Translation:**
-If you’re looking to expand your business to the English-speaking market and require a high-quality translation of your website, I’m the person for the job! With my extensive experience translating websites for a wide range of clients, I will cover the translation and localisation of your website’s content including text, images, and other visual aspects to help you reach a wider audience.
+If you’re looking to expand your business to the English-speaking market and require a high-quality translation of your website, I’m the person for the job! With my extensive experience translating websites for a wide range of clients, I will cover the translation and localisation of your website’s content including meta titles, meta descriptions, text, images, and other visual aspects to help you reach a wider audience.
 
 2. ##### Proofreading
 
@@ -20,7 +17,7 @@ The general rule of thumb is to always translate into your mother tongue. But so
    
 With a combination of a high attention to detail and being a native speaker of the English language, I can proofread your work for you, check for errors and ensure that the content and style of the text is completely accurate. 
 
-3. ##### MT Post-Editing
+3. ##### Machine Translation Post Editing
 
 Machine translation has drastically improved over the years thanks to AI machine learning techniques. However, despite it translating text almost instantly, it still makes mistakes and can produce highly inaccurate content. If you have used MT and want to make sure it is 100% accurate, I can read through your MT content and check for any errors or inaccuracies. 
   
