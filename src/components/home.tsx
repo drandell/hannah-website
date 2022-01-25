@@ -149,7 +149,7 @@ export class Home extends Component<{}, HomeProps> {
                                             <Col className="col-cards">
                                                 <div className="card card-custom-mini shadow rounded">
                                                     <div className="card-body">
-                                                        <h4 className="card-title text-center">German &amp; French into English</h4>
+                                                        <h4 className="card-title text-center">French &amp; German into English</h4>
                                                         <p> 
                                                         I offer a range of linguistic solutions and specialise in translation for various industries. My high attention to detail means that your texts will be translated to an excellent standard. 
                                                         </p>
@@ -171,7 +171,7 @@ export class Home extends Component<{}, HomeProps> {
                                             <Col className="col-cards">
                                                 <div className="card card-custom-mini shadow rounded">
                                                     <div className="card-body">
-                                                        <h4 className="card-title text-center">MT Post-Editing</h4>
+                                                        <h4 className="card-title text-center">Machine Translation Post Editing</h4>
                                                         <p> 
                                                         Machine translation has drastically improved over the last few years thanks to AI, but certain texts will still require a native English speaker to check for and correct any errors.
                                                         </p>

@@ -5,15 +5,15 @@ _Eliakim, Camden Barbershop Company_
 ---------------
 
 
-> `Hannah works very independently and conscientiously. Her texts are of very high quality and to my complete satisfaction. I can always rely on her and know that she can implement projects quickly and the quality of her work is excellent. Hannah is a reliable and vital team member at PlusDent.`
+> `Hannah works very independently and conscientiously. Her texts are of very high quality and to my complete satisfaction. I can always rely on her and know that she can implement projects quickly and the quality of her work is excellent. Hannah is a reliable and vital team member at PlusDent UK.`
 
 _Korenia, PlusDental_ 
 
 ---------------
 
-> `Hannah did a flawless job as usual. We are very satisfied with her work and will definitely continue to work with her in the future. It was a very good decision to hire her.`
+> `Hannah has always done such a good job. You can always count on her to complete all tasks exactly as agreed. Deadlines are always met and I am often amazed at how quickly she works. I am very happy to have hired Hannah and would recommend her to anyone looking for a reliable translator.`
 
-_Julien, Individual Client_  
+_Nina, Swiss Premium Cosmetics_  
 
 ---------------
 
